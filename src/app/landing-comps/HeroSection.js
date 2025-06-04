@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="bg-orange-50 py-8 px-4">
       {/* Text Section */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl lg:text-6xl font-bold text-gray-900 leading-snug mb-3">
+        <h1 className="text-3xl  md:text-2xl lg:text-6xl font-bold text-gray-900 leading-snug mb-3">
           Preserving our Past<br />
           Empowering Our<br />
           Future
@@ -29,14 +29,14 @@ const HeroSection = () => {
       </div>
 
       {/* Subtext */}
-      <h2 className="text-sm lg:text-4xl font-bold text-gray-900 mb-4 leading-snug max-w-3xl mx-auto lg:mx-0 lg:text-left">
-        Authenticity. Community-
-        centered. Decolonizing knowledge.
-      </h2>
+      <h2 className="text-md font-bold md:text-2xl center lg:text-4xl lg:font-bold text-gray-900 mb-4 leading-snug max-w-3xl mx-auto lg:mx-0 lg:ml-30 ml-4">
+  Authenticity. Community-centered. Decolonizing knowledge.
+</h2>
+
 
       {/* Second Image */}
       <div className="w-full flex justify-center">
-        <div className="w-full max-w-[75%]">
+        <div className="w-full max-w-[85%]">
           <Image
             src="/women.PNG"
             alt="women"

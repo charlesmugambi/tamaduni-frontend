@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const CardItem = ({ title, description, image }) => {
   return (
-    <div className="px-3">
+    <div>
+       <div className="px-3">
       <div className="bg-white rounded-2xl shadow-md overflow-hidden mb-6 border border-gray-500">
         {/* Image Section */}
         <div className="relative h-40 w-full">
@@ -26,12 +27,14 @@ const CardItem = ({ title, description, image }) => {
         {/* Text Content */}
         <div className="px-4 py-3">
           <h3 className="text-md font-bold text-gray-800 mb-1">{title}</h3>
-          <p className="text-xs text-gray-600 leading-snug">
+          <p className="text-md text-gray-600 leading-snug">
             {description}
           </p>
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 

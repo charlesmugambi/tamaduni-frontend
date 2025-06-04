@@ -30,7 +30,9 @@ const SectionCard = () => {
         }
     ]
     return ( 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+        <div>
+            <h2 className="font-bold mr-2.5 text-2xl p-2.5">Explore</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {cards.map((section, index) => (
             <CardItem
               key={index}
@@ -39,6 +41,8 @@ const SectionCard = () => {
               image={section.image}
             />
           ))}
+        </div>
+      
         </div>
       
     )
