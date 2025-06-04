@@ -1,0 +1,47 @@
+import React from "react";
+import CardItem from "./SingleCard";
+
+const SectionCard = () => {
+    const cards=[
+        {
+            title:"Afro Celebration",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            image:"/afro.PNG"
+        }, 
+        {
+            title:"Cultural Mapping",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            image:"/cultural.PNG"
+        },
+         {
+            title:"Digital ethnography",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            image:"/digital.PNG"
+        },
+         {
+            title:"Migration",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            image:"/migration.PNG"
+        },
+         {
+            title:"Civilization",
+            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+            image:"/civilization.png"
+        }
+    ]
+    return ( 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+          {cards.map((section, index) => (
+            <CardItem
+              key={index}
+              title={section.title}
+              description={section.description}
+              image={section.image}
+            />
+          ))}
+        </div>
+      
+    )
+}
+ 
+export default SectionCard;
