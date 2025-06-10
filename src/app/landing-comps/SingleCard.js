@@ -1,11 +1,14 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 
-const CardItem = ({ title, description, image }) => {
+const CardItem = ({ title, description, image, onClick }) => {
   return (
     <div>
        <div className="px-3">
-      <div className="bg-white rounded-2xl shadow-md overflow-hidden mb-6 border border-gray-500">
+      <div className="bg-white rounded-2xl shadow-md overflow-hidden mb-6 border border-gray-500"
+             onClick={onClick}
+      >
         {/* Image Section */}
         <div className="relative h-40 w-full">
           {image ? (
@@ -14,6 +17,7 @@ const CardItem = ({ title, description, image }) => {
               alt={title}
               fill
               className="object-contain"
+            
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
