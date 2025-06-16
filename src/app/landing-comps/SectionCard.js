@@ -37,6 +37,8 @@ const SectionCard = () => {
     const handleCardClick = (title)=>{
         if (title ==="Afro Celebration") {
           router.push('/afrocelebration')
+        }else if(title === "Cultural Mapping"){
+            router.push("/cultural-mapping")
         }
     }
     return ( 
