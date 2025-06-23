@@ -1,7 +1,7 @@
 "use client"
 import type { Metadata } from "next";
 import ArticleCard from "@/app/components/aricleCard";
-import { mockArticles } from "@/app/data/mockArticles";
+import { mockArticles } from "@/app/data/mockArticlesList";
 import { useState } from "react";
 // export const metadata: Metadata = {
 //   title: "Articles",
