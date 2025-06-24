@@ -1,12 +1,10 @@
 'use client'
 import React from 'react';
 import TitleAfro from "./title-afro"
-import SearchBar from '../landing-comps/SearchBar';
 import AfricanFlagsCarousel from "../afrocelebration-comps/flags"
 const AfroCelebrationPage = () => {
   return (
    <div>
-      <SearchBar/>
     <div>
       <AfricanFlagsCarousel/>
     </div>
