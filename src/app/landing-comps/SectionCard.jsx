@@ -35,11 +35,16 @@ const SectionCard = () => {
         }
     ];
     const handleCardClick = (title)=>{
-        if (title ==="Afro Celebration") {
-          router.push('/afrocelebration')
+        if (title ==="Etymology") {
+          router.push('/afr')
         }else if(title === "Cultural Mapping"){
             router.push("/cultural-mapping")
+        }else if(title === "Migration"){
+            router.push('/migration')
+        }else if (title === "Civilization"){
+            router.push("/african_civilization")
         }
+
     }
     return ( 
         <div>

@@ -1,5 +1,5 @@
 'use client'
-import AfricanFlagsCarousel from "../afrocelebration-comps/flags";
+import AfricanFlagsCarousel from "../comps/flags";
 import SearchBar from "../landing-comps/SearchBar";
 import Map from "./map"
 

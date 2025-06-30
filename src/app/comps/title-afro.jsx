@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 const TitleAfro = () => {
   const router=useRouter()
   const handleFilmClick=()=>{
-      router.push("/afro-film")
+      router.push("../afrocelebration/afro-film")
   }
     return ( 
       <div>

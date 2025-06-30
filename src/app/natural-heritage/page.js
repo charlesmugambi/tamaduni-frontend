@@ -1,4 +1,4 @@
-import AfricanFlagsCarousel from "../afrocelebration-comps/flags";
+import AfricanFlagsCarousel from "../comps/flags";
 import SearchBar from "../landing-comps/SearchBar";
 import Map from "../cultural-mapping/map"
 import NaturalBrowse from "./natural-browses"

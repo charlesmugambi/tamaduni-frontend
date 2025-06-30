@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
-import TitleAfro from "./title-afro"
-import AfricanFlagsCarousel from "../afrocelebration-comps/flags"
+import TitleAfro from "../comps/title-afro"
+import AfricanFlagsCarousel from "../comps/flags"
 const AfroCelebrationPage = () => {
   return (
    <div>
