@@ -9,7 +9,7 @@ const AfroCategories = () => {
 
   const handleFilmProfession = () => {
     console.log("Navigating to film professionals page...");
-    router.push("/film-professionals");
+    router.push("/afrocelebration/afro-film/film-professionals");
   };
 
   return ( 

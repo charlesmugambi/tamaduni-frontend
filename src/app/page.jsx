@@ -1,7 +1,6 @@
 // Home.js
-import HeroSection from "./landing-comps/HeroSection"
-import SectionCard from "./landing-comps/SectionCard.jsx"
-
+import HeroSection from "./comps/HeroSection"
+import SingleCard from "./comps/SectionCard.jsx"
 
 const Home = () => {
   return ( 
@@ -13,7 +12,7 @@ const Home = () => {
       </div>
       <HeroSection/>
      <div>
-   <SectionCard/>
+   <SingleCard/>
      </div>
     </div>
   );

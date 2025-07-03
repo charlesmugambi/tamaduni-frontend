@@ -1,14 +1,12 @@
-import AfricanFlagsCarousel from "../comps/flags";
-import SearchBar from "../landing-comps/SearchBar";
-import Map from "../cultural-mapping/map"
-import NaturalBrowse from "./natural-browses"
+import CulturalCategories  from "../../comps/culturalCategories"
+import NaturalBrowse from "../../comps/NaturalBrowses"
+import AfricanFlagsCarousel from "../../comps/flags";
 
 const NaturalHeitage = () => {
     return ( 
         <div>
-            <SearchBar/>
             <AfricanFlagsCarousel/>
-             <Map/>
+            <CulturalCategories/>
             <div>
                 <p className="font-bold text-2xl ml-3.5 mb-1">Browse categories</p>
                 <NaturalBrowse/>

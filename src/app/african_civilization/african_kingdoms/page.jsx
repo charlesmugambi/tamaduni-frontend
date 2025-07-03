@@ -4,14 +4,20 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 const AfricanKingdoms = () => {
-    const router=useRouter()
-    const handleCardClick = (title)=>{
-        if (title ==="Afro Celebration") {
-          router.push('../african_civilization/african_kingdoms/categories')
-        }else if(title === "Cultural Mapping"){
-            router.push("/cultural-mapping")
-        }
+  const router =useRouter()
+  const routeMap = {
+    "Etymology": "/african_civilization/african_kingdoms/categories",
+    /**other routes */
+  };
+  
+  const handleCardClick = (title) => {
+    const route = routeMap[title];
+    if (route) {
+      router.push(route);
+    }else{
+      console.log("page not found");
     }
+  }
     return ( 
         <div className="mx-3 ">
             <div>
