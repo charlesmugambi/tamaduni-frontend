@@ -2,6 +2,7 @@
 import AfricanFlagsCarousel from "../afrocelebration-comps/flags";
 import SearchBar from "../landing-comps/SearchBar";
 import Map from "./map"
+import CulturalMap from "../components/culturalMap";
 
 const Cultural = () => {
    
@@ -9,7 +10,8 @@ const Cultural = () => {
         <div className="">
             <SearchBar/>
             <AfricanFlagsCarousel/>
-            <Map/>
+            {/* <Map/> */}
+            <CulturalMap/>
             <div className="m-9">
                 <p className="font-bold text-4xl mb-2">Natural Heritage</p>
                 <p className="font-semibold text-2xl mb-2">Synopsis</p>

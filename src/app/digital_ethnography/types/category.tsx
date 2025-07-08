@@ -3,4 +3,5 @@ export interface Category {
     title: string;
     imageSrc: string;
     description: string;
+    
 }
