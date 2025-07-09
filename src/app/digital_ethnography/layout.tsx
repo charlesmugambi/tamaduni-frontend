@@ -1,7 +1,7 @@
 import '../globals.css';
 import { ReactNode } from 'react';
 import Image from 'next/image';
-import RadialMenu from '../components/RadialMenu';
+import RadialMenu from './components/RadialMenu';
 export const metadata = {
     title: 'Digital Ethnography',
 }

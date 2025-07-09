@@ -1,3 +1,4 @@
+
 'use client'
 import AfricanFlagsCarousel from "../comps/flags";
 import Map from "../comps/culturalCategories"

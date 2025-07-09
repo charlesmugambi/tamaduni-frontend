@@ -16,7 +16,12 @@ export default function Navbar() {
 
   // menu items 
   const links: NavLink[] = [
-    { label: 'Home',     href: '/digital_ethnography' },
+    { label: 'Home',     href: '/' },
+    {label:'Afrocelebration', href:'/afrocelebration'},
+    {label:'Digital Ethnography', href:'/digital_ethnography'},
+    {label:'Cultural Mapping', href:'/cultural-mapping'},
+    {label:'African Civilization', href:'/african_civilization'},
+    {label:'AFRICAN EARLY MOBILITY & MIGRATION', href:'/african_early_mobility_and_migration'},
   
     // …add more links here
   ];
@@ -30,7 +35,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             
               <Image
-                src="/logo.png"          // ← replace with your actual logo path
+                src="/logo.svg"          // ← replace with your actual logo path
                 alt="Tamaduni Logo"
                 width={140}
                 height={40}
