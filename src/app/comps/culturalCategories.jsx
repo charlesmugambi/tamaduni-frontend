@@ -6,8 +6,8 @@ const CulturalCategories = () => {
   const router = useRouter()
 
   const handleNaturalHeritage = () => {
-    // navigate or perform logic
-    router.push('/natural-heritage') // example
+   
+    router.push('/cultural_mapping/natural-heritage') // example
   }
 
   const items = [

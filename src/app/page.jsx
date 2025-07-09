@@ -1,8 +1,6 @@
 // Home.js
-import SearchBar from "./landing-comps/SearchBar"
-import HeroSection from "./landing-comps/HeroSection"
-import SectionCard from "./landing-comps/SectionCard"
-
+import HeroSection from "./comps/HeroSection"
+import SingleCard from "./comps/SectionCard.jsx"
 
 const Home = () => {
   return ( 
@@ -14,7 +12,7 @@ const Home = () => {
       </div>
       <HeroSection/>
      <div>
-   <SectionCard/>
+   <SingleCard/>
      </div>
     </div>
   );

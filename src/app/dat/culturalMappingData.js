@@ -1,10 +1,4 @@
-'use client'
-import SingleBrowse from "./single-browse";
-import { useRouter } from "next/navigation";
-
-const NaturalBrowse = () => {
-    const router = useRouter();
-  const categoryCards = [
+export  const categoryCards = [
     {
       title: "Museums",
       description:
@@ -30,23 +24,3 @@ const NaturalBrowse = () => {
       image: "/flags/film.PNG",
     },
   ];
-  
-  const handleNaturalMuseum=()=>{
-      router.push("/museum")
-  }
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {categoryCards.map((section, index) => (
-        <SingleBrowse
-          key={index}
-          afroTitle={section.title}
-          afroDescription={section.description}
-          afroImage={section.image}
-          onClick={handleNaturalMuseum}
-        />
-      ))}
-    </div>
-  );
-};
-
-export default NaturalBrowse;

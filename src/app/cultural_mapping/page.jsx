@@ -1,17 +1,14 @@
+
 'use client'
-import AfricanFlagsCarousel from "../afrocelebration-comps/flags";
-import SearchBar from "../landing-comps/SearchBar";
-import Map from "./map"
-import CulturalMap from "../components/culturalMap";
+import AfricanFlagsCarousel from "../comps/flags";
+import Map from "../comps/culturalCategories"
 
 const Cultural = () => {
    
     return ( 
         <div className="">
-            <SearchBar/>
             <AfricanFlagsCarousel/>
-            {/* <Map/> */}
-            <CulturalMap/>
+            <Map/>
             <div className="m-9">
                 <p className="font-bold text-4xl mb-2">Natural Heritage</p>
                 <p className="font-semibold text-2xl mb-2">Synopsis</p>

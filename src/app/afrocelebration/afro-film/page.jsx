@@ -1,7 +1,8 @@
 'use client'
-import TitleAfro from "../afrocelebration/title-afro";
-import Categories from "../afrocelebration-comps/browse-categories"; // or the correct path
-import AfricanFlagsCarousel from "../afrocelebration-comps/flags";
+import TitleAfro from "../../comps/title-afro";
+import AfricanFlagsCarousel from "../../comps/flags";
+import AfroCategories from "@/app/comps/afroCelecrationCategories";
+
 
 const Film = () => {
   return (
@@ -16,7 +17,7 @@ const Film = () => {
     </div>
       <p className="text-xl font-bold mt-4">Browse Categories</p>
       <div>
-      <Categories />
+      <AfroCategories/>
 
       </div>
     </div>
