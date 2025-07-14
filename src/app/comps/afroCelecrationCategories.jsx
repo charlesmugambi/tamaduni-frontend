@@ -7,9 +7,9 @@ import { afroCategoriesList } from "../dat/afroCelebrationData";
 const AfroCategories = () => {
   const router = useRouter();
 
-  const handleFilmProfession = () => {
-    console.log("Navigating to film professionals page...");
-    router.push("/afrocelebration/afro-film/film-professionals");
+  const handleFilmProfession = (id) => {
+    router.push(`/afrocelebration/afro-film/${id}`);
+    console.log("jdjd");
   };
 
   return ( 
@@ -20,7 +20,7 @@ const AfroCategories = () => {
         {afroCategoriesList.map((category, index) => (
           <div
             key={index}
-            onClick={handleFilmProfession} 
+            onClick={() => handleFilmProfession(category.id)} 
             className="flex cursor-pointer bg-yellow-400 rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200"
           >
             {/* Image Section */}

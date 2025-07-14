@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function NaturalBrowse () {
   const router =useRouter()
     const routeMap = {
-      "Museums": "/cultural_mapping/natural-heritage/museum",
+      "Museums": "/cultural_mapping/natural-heritage/karen-blixen-museum",
       "Cultural Mapping":"cultural_mapping",
       "Digital ethnography":"/digital_ethnography",
       "Migration":"/migration",

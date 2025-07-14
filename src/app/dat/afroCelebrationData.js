@@ -1,5 +1,6 @@
 export const afroCategoriesList = [
     {
+      id:"film_giant_sets_up_in_Rusinga_island",
       title: "Film giant sets up in Rusinga Island",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

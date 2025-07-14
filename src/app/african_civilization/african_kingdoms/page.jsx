@@ -3,20 +3,12 @@ import { civilizationCategoriesList } from "../../dat/africanCivilizationData";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
 const AfricanKingdoms = () => {
   const router =useRouter()
-  const routeMap = {
-    "Etymology": "/african_civilization/african_kingdoms/categories",
-    /**other routes */
-  };
   
-  const handleCardClick = (title) => {
-    const route = routeMap[title];
-    if (route) {
-      router.push(route);
-    }else{
-      console.log("page not found");
-    }
+  const handleCardClick = (id) => {
+    router.push(`/african_civilization/african_kingdoms/${id}`)
   }
     return ( 
         <div className="mx-3 ">
@@ -33,7 +25,7 @@ const AfricanKingdoms = () => {
           <div
             key={index}
             className="flex cursor-pointer bg-yellow-400 rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200"
-            onClick={() => handleCardClick(article.title)}
+            onClick={() => handleCardClick(article.id)}
 
           >
             {/* Image Section */}
