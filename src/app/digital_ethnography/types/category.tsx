@@ -1,7 +1,8 @@
 export interface Category {
-    id: string;
-    title: string;
+    key: string;
+    label: string;
+    model: string;
+    previewFields: string[];
+    synopsis: string;
     imageSrc: string;
-    description: string;
-    
-}
+  }
