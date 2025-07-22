@@ -19,7 +19,7 @@ export default function Navbar() {
     { label: 'Home',     href: '/' },
     {label:'Afrocelebration', href:'/afrocelebration'},
     {label:'Digital Ethnography', href:'/digital_ethnography'},
-    {label:'Cultural Mapping', href:'/cultural-mapping'},
+    {label:'Cultural Mapping', href:'/cultural_mapping'},
     {label:'African Civilization', href:'/african_civilization'},
     {label:'AFRICAN EARLY MOBILITY & MIGRATION', href:'/african_early_mobility_and_migration'},
   
