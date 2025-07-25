@@ -15,7 +15,7 @@ export default async function DetailPage() {
     `/afrocelebration/${categoryKey}/${entryId}`
   )
   const item = res.data
-
+  
   return (
     <div className="max-w-3xl mx-auto p-6">
       <DynamicRecordDetail item={item} />
