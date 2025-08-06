@@ -1,7 +1,7 @@
 
 'use client'
-import AfricanFlagsCarousel from "../comps/flags";
-import Map from "../comps/culturalCategories"
+import AfricanFlagsCarousel from "../components/afrocelebrationcomps/flags";
+import Map from "../components/cultural-mappingcomps/culturalCategories"
 
 const Cultural = () => {
    

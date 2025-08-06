@@ -6,8 +6,8 @@ import { useParams, useRouter }   from 'next/navigation'
 import { modulesConfig, BaseCategory } from '../../../data/afro-celebration/craftCategories'
 import api                         from '../../../lib/api'
 import EntryCard                   from '../../../components/EntryCard'
-import AfricanFlagsCarousel        from '../../../comps/flags'
-import TitleAfro                   from '../../../comps/title-afro'
+import AfricanFlagsCarousel        from '../../../components/afrocelebrationcomps/flags'
+import TitleAfro                   from '../../../components/afrocelebrationcomps/title-afro'
 
 export default function ModuleBrowser() {
   const router = useRouter()

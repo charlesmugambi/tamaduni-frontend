@@ -1,5 +1,5 @@
 'use client'
-import AfricanFlagsCarousel from "../comps/flags"
+import AfricanFlagsCarousel from "../components/afrocelebrationcomps/flags"
 import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'

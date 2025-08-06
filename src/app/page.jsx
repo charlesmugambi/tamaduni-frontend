@@ -1,20 +1,22 @@
+
 // Home.js
-import HeroSection from "./comps/HeroSection"
-import SingleCard from "./comps/SectionCard.jsx"
+import HeroSection from "./components/landingpagecomps/HeroSection";
+import SingleCard from "./components/landingpagecomps/LandingPageCards";
 
 const Home = () => {
-  return ( 
-    <div 
-    className="flex flex-col min-h-screen ">
-      <div className="bg-gradient-to-b from-orange-50 to-amber-50">
-        <div className="container mx-auto">
-        </div>
-      </div>
-      <HeroSection/>
-     <div>
-   <SingleCard/>
-     </div>
-    </div>
+  return (
+    <main className="flex flex-col min-h-screen bg-gradient-to-b from-orange-50 to-amber-50">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-8">
+        <HeroSection />
+      </section>
+
+      {/* Section with Cards or Content */}
+      <section className="container mx-auto px-4 py-8">
+        <SingleCard />
+      </section>
+    </main>
   );
-}
+};
+
 export default Home;

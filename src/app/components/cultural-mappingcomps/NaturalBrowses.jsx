@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import  { categoryCards } from "../dat/culturalMappingData"
+import  { categoryCards } from "../../dat/culturalMappingData"
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 

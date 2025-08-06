@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import { afroCategoriesList } from "../dat/afroCelebrationData";
+import { afroCategoriesList } from "../../dat/afroCelebrationData";
 
 const AfroCategories = () => {
   const router = useRouter();
