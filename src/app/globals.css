@@ -24,3 +24,54 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.main-with-bg {
+  position: relative;
+  overflow: hidden; /* optional: prevents scrollbars from oversized bg */
+}
+
+/* Decorative background layer */
+.main-with-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* full cover of the main element */
+  z-index: -3;              /* behind content */
+  pointer-events: none;     /* doesn't capture clicks */
+  background-image: url('/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;   /* fill the area without repeating */
+  /* Optional: keep background fixed while page scrolls */
+  /* background-attachment: fixed; */
+  opacity: 1;               /* tweak if you want faded background */
+}
+
+.main-with-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;              /* above the SVG (before) but below page content */
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.637); /* darken — use rgba(255,255,255,0.12) to lighten */
+}
+
+.custom-div-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.custom-div-icon .marker-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

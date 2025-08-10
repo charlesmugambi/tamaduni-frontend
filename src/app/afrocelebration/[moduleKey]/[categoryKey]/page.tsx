@@ -1,13 +1,17 @@
-// src/app/afrocelebration/[moduleKey]/[categoryKey]/page.tsx
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useParams, useRouter }   from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import { modulesConfig, BaseCategory } from '../../../data/afro-celebration/craftCategories'
-import api                         from '../../../lib/api'
-import EntryCard                   from '../../../components/EntryCard'
-import AfricanFlagsCarousel        from '../../../comps/flags'
-import TitleAfro                   from '../../../comps/title-afro'
+import api from '../../../lib/api'
+import EntryCard from '../../../components/EntryCard'
+import AfricanFlagsCarousel from '../../../comps/flags'
+import AfroCelebrationCarousel from '@/app/components/AfroCelebrationCarousel'
+
+type Entry = {
+  id: string | number
+  [key: string]: unknown
+}
 
 export default function ModuleBrowser() {
   const router = useRouter()
@@ -17,13 +21,13 @@ export default function ModuleBrowser() {
   }
   const { moduleKey, categoryKey } = params
 
-  // 1) Get this module’s category list
   const categories: BaseCategory[] = modulesConfig[moduleKey] || []
-  if (!categories.length) {
-    return <p className="p-4">Unknown module: {moduleKey}</p>
-  }
 
-  // 2) Determine active label (decode URL segment or default to first label)
+  const [entries, setEntries] = useState<Entry[]>([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  
   const decodedLabel = categoryKey
     ? decodeURIComponent(categoryKey)
     : categories[0].label
@@ -31,36 +35,36 @@ export default function ModuleBrowser() {
   const activeCategory: BaseCategory =
     categories.find(cat => cat.label === decodedLabel) || categories[0]
 
-  // 3) React state
-  const [entries, setEntries] = useState<any[]>([])
-  const [loading, setLoading] = useState(false)
-  const [error, setError]     = useState<string | null>(null)
-
-  // 4) Fetch list when module or activeCategory changes
   useEffect(() => {
     async function fetchEntries() {
       setLoading(true)
       setError(null)
       try {
-        // URL: /afrocelebration/<moduleKey>/<encodedLabel>/?page=0
-        const path = `/afrocelebration/${(activeCategory.key)}/?page=0`
-        const res  = await api.get<any>(path)
-        // assume data array is res.data.results or res.data itself
+        const path = `/afrocelebration/${activeCategory.key}/?page=0`
+        const res = await api.get<{ results: Entry[] }>(path)
         setEntries(Array.isArray(res.data) ? res.data : res.data.results || [])
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.error(err)
-        setError(err.message || 'Failed to load entries')
+        if (err instanceof Error) {
+          setError(err.message)
+        } else {
+          setError('Failed to load entries')
+        }
       } finally {
         setLoading(false)
       }
     }
     fetchEntries()
-  }, [moduleKey, activeCategory.label])
+  }, [moduleKey, activeCategory.key])
+
+  if (!categories.length) {
+    return <p className="p-4">Unknown module: {moduleKey}</p>
+  }
 
   return (
     <div className="p-4 space-y-6">
       <AfricanFlagsCarousel />
-      <TitleAfro />
+      <AfroCelebrationCarousel />
 
       {/* Tabs */}
       <div className="flex space-x-3 overflow-x-auto p-2">
@@ -84,10 +88,8 @@ export default function ModuleBrowser() {
         })}
       </div>
 
-      {/* Heading */}
       <h2 className="text-xl font-bold">{activeCategory.label}</h2>
 
-      {/* Loading / Error / Entries Grid */}
       {loading ? (
         <p>Loading…</p>
       ) : error ? (

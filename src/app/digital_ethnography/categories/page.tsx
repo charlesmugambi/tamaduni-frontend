@@ -12,7 +12,7 @@ export default function CategoriesPage() {
       {/* Left: Browse Categories */}
       <div className="lg:w-2/3">
         <h1 className="text-3xl font-bold mb-6">Browse categories</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="space-y-6">
           {digitalEthnographyCategoriesList.map((category) => (
             <CategoryCard key={category.key} category={category} href= {`/digital_ethnography/${category.model}`}/>
           ))}
@@ -29,21 +29,27 @@ export default function CategoriesPage() {
         <h2 className="text-xl font-semibold mb-4">Recent Discussions</h2>
         <div className="space-y-4">
           <div className="bg-yellow-200 p-4 rounded-lg shadow">
-            <p className="text-sm font-medium text-gray-800">Ugunza's voice is much more than a street food</p>
+            <p className="text-sm font-medium text-gray-800">
+              Ugunza&apos;s voice is much more than a street food
+            </p>
             <div className="mt-2 flex justify-between text-xs text-gray-600">
               <span>June 10, 2024</span>
               <span>29 comments</span>
             </div>
           </div>
           <div className="bg-yellow-200 p-4 rounded-lg shadow">
-            <p className="text-sm font-medium text-gray-800">Ugunza's voice is much more than a street food</p>
+            <p className="text-sm font-medium text-gray-800">
+              Ugunza&apos;s voice is much more than a street food
+            </p>
             <div className="mt-2 flex justify-between text-xs text-gray-600">
               <span>June 10, 2024</span>
               <span>29 comments</span>
             </div>
           </div>
           <div className="bg-yellow-200 p-4 rounded-lg shadow">
-            <p className="text-sm font-medium text-gray-800">There is much more than street food</p>
+            <p className="text-sm font-medium text-gray-800">
+              There is much more than street food
+            </p>
             <div className="mt-2 flex justify-between text-xs text-gray-600">
               <span>June 10, 2024</span>
               <span>29 comments</span>

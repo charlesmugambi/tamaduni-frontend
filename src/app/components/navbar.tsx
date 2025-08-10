@@ -21,7 +21,7 @@ export default function Navbar() {
     {label:'Digital Ethnography', href:'/digital_ethnography'},
     {label:'Cultural Mapping', href:'/cultural_mapping'},
     {label:'African Civilization', href:'/african_civilization'},
-    {label:'AFRICAN EARLY MOBILITY & MIGRATION', href:'/african_early_mobility_and_migration'},
+    {label:'AFRICAN EARLY MOBILITY & MIGRATION', href:'/migration'},
   
     // …add more links here
   ];

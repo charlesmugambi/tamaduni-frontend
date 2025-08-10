@@ -3,14 +3,12 @@ import React from "react";
 import type { Metadata } from "next";
 import {ClockIcon} from "@heroicons/react/24/outline";
 import {UserGroupIcon} from "@heroicons/react/24/solid";
-import { mockTribeOverview } from "../data/mockTribeOverview";
 
 export const metadata: Metadata = {
   title: "Maasai Tribe Overview",
 };
 
 export default function TribeOverviewPage() {
-  const { tribeName, etymology, history, population, synopsis } = mockTribeOverview;
 
   return (
     <div className="bg-cream-50 min-h-screen p-4 md:p-8">

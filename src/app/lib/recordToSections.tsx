@@ -1,5 +1,6 @@
 import type { SectionConfig } from '../components/DynamicSections'
 import React from 'react'
+import Image from 'next/image'
 
 /**
  * Inspects any flat record and builds a SectionConfig for each non-null field.
@@ -39,7 +40,7 @@ export function generateSectionsFromRecord<T extends Record<string, any>>(
       render = (medias: string[]) => (
         <div className="grid grid-cols-2 gap-4">
           {medias.map((url: string, i: number) => (
-            <img key={i} src={url} alt="" className="rounded-lg" />
+            <Image key={i} src={url} alt="" className="rounded-lg" />
           ))}
         </div>
       )

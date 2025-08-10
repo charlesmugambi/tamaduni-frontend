@@ -99,7 +99,7 @@ export default function AfricanFlagsCarousel() {
   };
 
   return (
-    <div className="w-full bg-gradient-to-r from-orange-50 via-amber-50 to-yellow-50 py-8 px-4">
+    <div className="w-full  py-8 px-4">
       <div className="flex items-center justify-center max-w-2xl mx-auto">
         {/* Left Arrow */}
         <button 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="bg-orange-50 py-8 px-4">
+    <div className=" py-8 px-4">
       {/* Text Section */}
       <div className="text-center mb-6">
         <h1 className="text-3xl  md:text-2xl lg:text-6xl font-bold text-gray-900 leading-snug mb-3">
@@ -18,10 +18,10 @@ const HeroSection = () => {
       {/* First Image */}
       <div className="mb-4">
         <Image
-          src="/giraffe.PNG"
+          src="/Man taking photos of wild life at safari.svg"
           alt="giraffe"
-          width={250}
-          height={150}
+          width={800}
+          height={400}
           className="mx-auto rounded lg:w-[500px] lg:h-[300px] object-cover"
           style={{ width: "auto", height: "auto" }}
           priority
@@ -38,7 +38,7 @@ const HeroSection = () => {
       <div className="w-full flex justify-center">
         <div className="w-full max-w-[85%]">
           <Image
-            src="/women.PNG"
+            src="/women.svg"
             alt="women"
             width={380}
             height={400}

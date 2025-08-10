@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { generateSectionsFromRecord } from '../lib/recordToSections'
-import type { SectionConfig } from '../components/DynamicSections'
+import type { SectionConfig } from './DynamicSections'
 
 interface Props {
   /** The API‑fetched record of any model/category */

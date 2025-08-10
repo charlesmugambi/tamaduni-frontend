@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
-import type { Metadata } from 'next'
 import CategoryCard from '../../components/CategoryCard'
 import { digitalEthnographyCategoriesList } from '../../data/digitalEthnography/ethnographyCategoryList'
 
@@ -31,7 +30,7 @@ export default function ArticlesPage() {
       setLoading(true)
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/ethnography/${categoryConfig.model}?page=1`
+          `${process.env.NEXT_PUBLIC_BASE_URL}ethnography/${categoryConfig.model}?page=1`
         )
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()

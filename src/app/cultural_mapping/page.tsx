@@ -1,14 +1,14 @@
 
-'use client'
+'use client';
 import AfricanFlagsCarousel from "../comps/flags";
-import Map from "../comps/culturalCategories"
+import CulturalMap from "../components/culturalMap"
 
 const Cultural = () => {
    
     return ( 
         <div className="">
             <AfricanFlagsCarousel/>
-            <Map/>
+            <CulturalMap/>
             <div className="m-9">
                 <p className="font-bold text-4xl mb-2">Natural Heritage</p>
                 <p className="font-semibold text-2xl mb-2">Synopsis</p>

@@ -8,15 +8,15 @@ export const digitalEthnographyCategoriesList: Category[] = [
     model: 'tribeOverview',
     previewFields: ['tribe_name', 'media'],
     synopsis: 'A comprehensive overview of the tribe’s origins, culture, and structure.',
-    imageSrc: '/images/tribe-overview.jpg',
+    imageSrc: '/digital ethnography/tribe-oerview.png',
   },
   {
     key: 'architecture-and-construction',
     label: 'Architecture & Construction',
-    model: 'architectureAndConstruction',
+    model: 'ArchitectureAndConstruction',
     previewFields: ['architectural_styles', 'media'],
     synopsis: 'Explore traditional building techniques and architectural styles.',
-    imageSrc: '/images/architecture-and-construction.jpg',
+    imageSrc: '/digital ethnography/architecture and construction.png',
   },
   {
     key: 'dietary-culinary-practices',
@@ -24,7 +24,7 @@ export const digitalEthnographyCategoriesList: Category[] = [
     model: 'dietaryCulinaryPractices',
     previewFields: ['culinaryHeritage', 'media'],
     synopsis: 'Delve into the tribe’s dietary traditions and culinary heritage.',
-    imageSrc: '/images/dietary-culinary-practices.jpg',
+    imageSrc: '/digital ethnography/dietary and culinury.png',
   },
   {
     key: 'economic-values-and-commerce',
@@ -32,7 +32,7 @@ export const digitalEthnographyCategoriesList: Category[] = [
     model: 'economicValuesAndCommerce',
     previewFields: ['economicPractices', 'media'],
     synopsis: 'Insights into trade networks and economic systems.',
-    imageSrc: '/images/economic-values-and-commerce.jpg',
+    imageSrc: '/digital ethnography/economic.png',
   },
   {
     key: 'education-and-arts',
@@ -40,7 +40,7 @@ export const digitalEthnographyCategoriesList: Category[] = [
     model: 'educationAndArts',
     previewFields: ['educationApproach', 'media'],
     synopsis: 'An overview of educational practices and artistic expressions.',
-    imageSrc: '/images/education-and-arts.jpg',
+    imageSrc: '/digital ethnography/education and arts.png',
   },
   {
     key: 'entertainment-and-recreation',
@@ -48,7 +48,7 @@ export const digitalEthnographyCategoriesList: Category[] = [
     model: 'entertainmentAndRecreation',
     previewFields: ['culturalForms', 'media'],
     synopsis: 'Discover leisure activities and cultural performances.',
-    imageSrc: '/images/entertainment-and-recreation.jpg',
+    imageSrc: '/digital ethnography/entertainment.png',
   },
 ];
 
